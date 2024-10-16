@@ -1,0 +1,67 @@
+
+<style>
+   .btn-search{
+    background-color:  orangered;
+    color: white;
+    border-radius: 25px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+   }
+   .btn-search i{
+    display: inline;
+    margin-right: 0.5rem;
+   }
+   
+   .search-input{
+    border-radius: 25px;
+    padding: 0.5rem 3rem 0.5rem 3rem ;
+    font-size: 0.9rem;
+   }
+    
+   @media (max-width: 800px) {
+       .navbar-collapse {
+           background-color: white; /* Set background color to white */
+           transition: background-color 0.3s ease; /* Smooth transition */
+       }
+
+       .navbar-nav .nav-link {
+           color: black; /* Change link color to black for visibility */
+       }
+   }
+   
+   
+</style>
+
+<nav class="navbar navbar-expand-md  navbar-light bg-body-light border-bottom sticky-top">
+    <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+     
+      <div class="navbar-nav">
+        <!-- <a class="nav-item nav-link" href="/">Home </a> -->
+        <a class="nav-item nav-link" href="/listings"><b>Explore</b></a>
+      </div>
+
+      <div  class="navbar-nav mx-auto">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search destinations" >
+          <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto">
+        <a class="nav-item nav-link" href="/listings/new"><b>Add New Listing</b></a>
+
+        <% if(!curUser){ %>
+        <a class="nav-item nav-link" href="/signup"><b>Sign Up</b> </a>
+        <a class="nav-item nav-link" href="/login"><b>Login</b></a>
+       <% } %>
+       <% if(curUser){ %>
+        <a class="nav-item nav-link" href="/logout"><b>Logout</b></a>
+      <%  }  %>
+      </div>
+
+    </div>
+  </nav>

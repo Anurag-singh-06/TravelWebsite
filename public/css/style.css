@@ -1,0 +1,190 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+            margin: 0;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: orangered;
+  font-size: 2.5rem;
+}
+
+.nav-link {
+  color: rgb(6, 6, 6) !important;
+}
+
+
+div.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  flex: 1;
+}
+
+/* Cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  -webkit-border-radius: 1rem !important;
+  -moz-border-radius: 1rem !important;
+  -ms-border-radius: 1rem !important;
+  -o-border-radius: 1rem !important;
+  width: 100%;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+a.listing-link {
+    text-decoration: none !important;
+  }
+  
+
+/* Footer */
+
+.errorShowing{
+  min-height: 67vh;
+}
+
+.f-info {
+  display: flex;
+  background-color: #ebebeb;
+  height: 8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-info-links,
+.f-info-brand {
+  width: 100%;
+  gap: 0.8rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.f-info-socials {
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.f-info-socials i:hover {
+  cursor: pointer;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.fa-square-facebook {
+  color: #1877f2;
+}
+
+.fa-square-instagram {
+  color: #e1306c;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+/* FORM */
+
+input {
+  color: black;
+}
+
+
+/* Show image */
+.show-img{
+  height: 40vh;
+}
+
+.show-card{
+  padding: 0.3rem !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.show-text{
+  padding: 0.5rem !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.show-title{
+  font-size: 1.2rem;
+}
+
+/* NAVBAR CSS */
+.navbar-nav .nav-link {
+  margin-right: 0.8rem ;
+  position: relative;
+  padding-bottom: 5px; /* Adjust padding as needed */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Thickness of the line */
+  background-color: orangered; /* Orange color for the line */
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Expand the width on hover */
+}
+
+
+/* MAP */
+#map { 
+    height:400px ;
+    width: 80%;
+   }
