@@ -58,7 +58,7 @@ async function main() {
 //   });
 
  // USING EXPRESS SESSION
- // defining options
+ // defining options in main
 
  const store = MongoStore.create({
   mongoUrl: dbUrl,
